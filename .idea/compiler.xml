@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="comp1008Tuesdays8amGUI" />
+        <module name="comp1008Fall2022Tuesdays8amGUI" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="comp1008Tuesdays8amGUI" target="18" />
+      <module name="comp1008Fall2022Tuesdays8amGUI" target="18" />
     </bytecodeTargetLevel>
   </component>
 </project>

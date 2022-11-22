@@ -1,4 +1,4 @@
-package ca.georgiancollege.comp1008.comp1008tuesdays8amgui;
+package ca.georgiancollege.comp1008.comp1008Fall2022tuesdays8amgui;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
