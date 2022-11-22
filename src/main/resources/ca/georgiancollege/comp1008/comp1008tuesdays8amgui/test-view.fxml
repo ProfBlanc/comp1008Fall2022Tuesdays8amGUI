@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.georgiancollege.comp1008.comp1008tuesdays8amgui.TestController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#588000" height="350.0" layoutX="50.0" layoutY="25.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" width="500.0" />
+      <Line endY="350.0" layoutX="310.0" layoutY="25.0" stroke="WHITE" strokeWidth="2.0" />
+      <Circle fill="#588000" layoutX="311.0" layoutY="200.0" radius="50.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#588000" height="200.0" layoutX="50.0" layoutY="100.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="85.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#588000" height="200.0" layoutX="465.0" layoutY="100.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0" width="85.0" />
+   </children>
+</AnchorPane>
