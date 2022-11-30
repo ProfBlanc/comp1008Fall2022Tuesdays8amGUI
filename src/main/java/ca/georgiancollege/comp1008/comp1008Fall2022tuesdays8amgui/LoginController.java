@@ -17,44 +17,17 @@ public class LoginController {
     @FXML
     private PasswordField loginPassword;
 
+    LoginModel model = new LoginModel();
+
     @FXML
     void onLoginClicked(ActionEvent event) {
 
-        //sout
-        //System.out.println(loginUsername.getText());
-        String receivedUsername = loginUsername.getText();
-        String expectedUsername = "admin";
-
-        String receivedPassword = loginPassword.getText();
-        String expecedPassword = "pass";
-        if(receivedUsername.equals(expectedUsername)
-        &&
-            receivedPassword.equals(expecedPassword)){
-
-            errorMessage.setText("");
-
-            Utilities.createAlert(Alert.AlertType.CONFIRMATION,
-                    "Good Job!",
-                    "You may enter").show();
-
-            try{
-                Utilities.openScreen("welcome", "Welcome Everyone!");
-            }
-            catch (Exception e){
-
-                Utilities.createAlert(Alert.AlertType.ERROR,
-                        "Cannot open file",
-                        "We were unable open the welcome file").show();
-            }
+        try{
+            model.processRequest(loginUsername.getText(), loginPassword.getText());
+            Utilities.openScreen("welcome", "Welcome!");
         }
-        else{
-           /*
-            Utilities.createAlert(Alert.AlertType.ERROR,
-                    "Error! Bad!",
-                    "Incorrect Username and/or password").show();
-
-            */
-            errorMessage.setText("Incorrect Username and/or password");
+        catch (Exception e){
+            errorMessage.setText(e.getMessage());
         }
 
     }
@@ -63,6 +36,12 @@ public class LoginController {
     void onRegisterClicked(ActionEvent event) {
 
         System.out.println(loginPassword.getText());
+        try {
+            Utilities.openScreen("register", "Register");
+        }
+        catch (Exception e){
+            errorMessage.setText(e.getMessage());
+        }
 
     }
 
